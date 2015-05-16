@@ -1,15 +1,197 @@
+<!--<head>-->
+  <!--<title>pie</title>-->
+<!--</head>-->
+
+<!--<body>-->
+  <!--<h1>Welcome to Meteor!</h1>-->
+  <!--{{> loginButtons}}-->
+  <!--{{> hello}}-->
+  <!--{{> product}}-->
+<!--</body>-->
+
+<!--<template name="hello">-->
+  <!--<button>Click Me</button>-->
+  <!--<p>You've pressed the button {{counter}} times.</p>-->
+<!--</template>-->
+
+
 <head>
-  <title>pie</title>
+  <title>PIE</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-  {{> loginButtons}}
-  {{> hello}}
-  {{> product}}
-</body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
+<app layout vertical fit>
+  <header layout horizontal center>
+    <logo>
+      <a href="index.html"><h1 title="Пазарувай Информирано">Пазарувай Информирано</h1></a>
+    </logo>
+    <nav flex>
+      <category blue>Козметика</category>
+      <overlay hide>
+        <sub-nav blue>
+          <arrow></arrow>
+          <ul>
+            <li><a href="#">After Shave</a></li>
+            <li><a href="#">Body Wash & Cleanser</a></li>
+            <li><a href="#">Conditioner</a></li>
+            <li><a href="#">Deodorants & Antiperspirants</a></li>
+            <li><a href="#">Eye & Ear Care</a></li>
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Medicine Cabinet</a></li>
+            <li><a href="#">Mouthwash</a></li>
+            <li><a href="#">Shampoo</a></li>
+            <li><a href="#">Shaving Cream</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Soap</a></li>
+            <li><a href="#">Sunscreen SPF 15 and Above</a></li>
+            <li><a href="#">Tampons</a></li>
+            <li><a href="#">Toothpaste</a></li>
+          </ul>
+        </sub-nav>
+      </overlay>
+      <category green>Храна</category>
+      <overlay hide>
+        <sub-nav green>
+          <arrow></arrow>
+          <ul>
+            <li><a href="#">After Shave</a></li>
+            <li><a href="#">Body Wash & Cleanser</a></li>
+            <li><a href="#">Conditioner</a></li>
+            <li><a href="#">Deodorants & Antiperspirants</a></li>
+            <li><a href="#">Eye & Ear Care</a></li>
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Medicine Cabinet</a></li>
+            <li><a href="#">Mouthwash</a></li>
+            <li><a href="#">Shampoo</a></li>
+            <li><a href="#">Shaving Cream</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Soap</a></li>
+            <li><a href="#">Sunscreen SPF 15 and Above</a></li>
+            <li><a href="#">Tampons</a></li>
+            <li><a href="#">Toothpaste</a></li>
+          </ul>
+        </sub-nav>
+      </overlay>
+      <category pink>Бебешки/детски продукти</category>
+      <overlay hide>
+        <sub-nav pink>
+          <arrow></arrow>
+          <ul>
+            <li><a href="#">After Shave</a></li>
+            <li><a href="#">Body Wash & Cleanser</a></li>
+            <li><a href="#">Conditioner</a></li>
+            <li><a href="#">Deodorants & Antiperspirants</a></li>
+            <li><a href="#">Eye & Ear Care</a></li>
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Medicine Cabinet</a></li>
+            <li><a href="#">Mouthwash</a></li>
+            <li><a href="#">Shampoo</a></li>
+            <li><a href="#">Shaving Cream</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Soap</a></li>
+            <li><a href="#">Sunscreen SPF 15 and Above</a></li>
+            <li><a href="#">Tampons</a></li>
+            <li><a href="#">Toothpaste</a></li>
+          </ul>
+        </sub-nav>
+      </overlay>
+    </nav>
+    <login>
+      <a href="">login</a>
+    </login>
+  </header>
+
+  <main flex layout horizontal>
+    <row flex four layout vertical>
+      <cart flex tree layout vertical id="pi-rating">
+
+        <criteria ingredients>
+          <rating>6.5</rating>
+          <h2>Съставки</h2>
+          <ul>
+            <li>Съставки</li>
+            <li>Сертификати</li>
+          </ul>
+        </criteria>
+
+        <criteria people>
+          <rating>8.1</rating>
+          <h2>Обществено мнение</h2>
+          <ul>
+            <li>Медии</li>
+            <li>Потребители</li>
+            <li>Лаборадории</li>
+          </ul>
+        </criteria>
+
+        <footer>
+          <description>
+            Финалната оценка на един продукт е повлияна от оценката на съставките и оценката, която медиите и клиентите сформират.
+          </description>
+          <po-rating>
+            <number>7.3</number>
+            <info>
+              <logo></logo>
+              <detail>
+                <total>7.2/10</total>
+                <criteria ingredients></criteria>
+                <criteria people></criteria>
+              </detail>
+            </info>
+          </po-rating>
+        </footer>
+      </cart>
+      <column flex two layout horizontal>
+        <cart flex one layout vertical id="mobile-app">
+          <cart-top-title>МОБИЛНО ПРИЛОЖЕНИЕ</cart-top-title>
+          <button>ИЗТЕГЛИ</button>
+        </cart>
+        <cart flex one layout vertical id="bio-shops">
+          <cart-top-title>От къде пазарувате?</cart-top-title>
+        </cart>
+      </column>
+    </row>
+    <row flex four layout vertical>
+      <column flex one layout horizontal>
+        <cart flex one layout vertical id="fyi-movie-first">
+          <cart-title>Какво означава "ORGANIC"</cart-title>
+          <play-button></play-button>
+        </cart>
+        <cart flex one layout vertical id="fyi-movie-second">
+          <cart-title>Защо глутена е лош избор?</cart-title>
+          <play-button></play-button>
+        </cart>
+      </column>
+      <cart flex one layout vertical id="what-is-in-products">
+        <cart-left-title>Знаете ли както има във<br/>
+          <strong>Вашата паста за зъби?</strong>
+          <br/>
+          <a href="#">Към статията</a>
+        </cart-left-title>
+      </cart>
+    </row>
+    <row flex two layout vertical show-on-large>
+      <cart flex one layout vertical id="e-list">
+        <cart-top-title>Какво означават E-тата на етикетите</cart-top-title>
+        <ul>
+          <li><a href="#">Регулатори на киселенността</a></li>
+          <li><a href="#">Противо пенливи агенти</a></li>
+          <li><a href="#">Антиоксиданти</a></li>
+          <li><a href="#">Оцветители</a></li>
+          <li><a href="#">Емулгатори</a></li>
+          <li><a href="#">Вкусови подобрители</a></li>
+          <li><a href="#">Изкуствени увкосители</a></li>
+          <li><a href="#">Консерванти</a></li>
+          <li><a href="#">Стабилизатори</a></li>
+          <li><a href="#">Подсладители</a></li>
+          <li><a href="#">Емулгатори</a></li>
+        </ul>
+      </cart>
+      <cart flex one layout vertical id="products">
+        <cart-top-title>Марка продукти на вашето внимание</cart-top-title>
+      </cart>
+    </row>
+  </main>
+</app>
+</body>

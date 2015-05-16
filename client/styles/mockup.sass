@@ -1,0 +1,652 @@
+$headerHeight: 12%
+$blueBackground: rgba(81, 176, 201, 0.92)
+$pinkBackground: rgba(186, 95, 155, 0.92)
+$greenBackground: rgba(81, 201, 129, 0.92)
+
+body,
+html
+  height: 100%
+  width: 100%
+
+body
+  margin: 0
+  font-family: "Helvetica Neue", "Open Sans", Tahoma
+  font-size: 0.85rem
+  min-width: 480px
+
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+a
+  text-decoration: none
+
+a, button
+  cursor: pointer
+
+*
+  box-sizing: border-box
+
+h1
+  margin: 0
+  padding: 0
+
+[hide]
+  display: none !important
+  
+app
+  background: #fafafa
+
+  header
+    height: $headerHeight
+    background: #232323
+    flex: none
+
+    logo
+      h1
+        border-right: solid 1px #919191
+        background: url("img/pi-logo.png") no-repeat center center
+        opacity: 0.9
+        width: 90px
+        height: 50px
+        margin-right: 1rem
+        display: block
+        overflow: hidden
+        text-indent: 1000px
+        white-space: nowrap
+
+        &:hover
+          opacity: 1
+
+    nav
+      > category
+        cursor: pointer
+        color: #919191
+        font-size: 15px
+        font-weight: 300
+        padding: 0.5rem 0.8rem
+        transition: color 0.2s
+
+        &:hover
+          color: #fff
+
+        &[selected]
+          &[pink]
+            color: $pinkBackground
+          &[green]
+            color: $greenBackground
+          &[blue]
+            color: $blueBackground
+
+
+main
+  background: #333
+
+cart
+  background: #ffffff
+  overflow: auto
+  position: relative
+
+cart-title,
+cart-top-title,
+cart-left-title
+  position: absolute
+  bottom: 20px
+  left: 20px
+  right: 20px
+  text-transform: uppercase
+  color: #fff
+  font-size: 20px
+  font-weight: 100
+  padding: 10px
+  letter-spacing: 0.5px
+  background: rgba(0,0,0,0.05)
+
+cart-top-title
+  padding: 0
+  bottom: auto
+  margin-top: 20px
+  margin-right: 20px
+  margin-left: 20px
+  left: 0
+  background: transparent
+  font-size: 18px
+  position: relative
+
+cart-left-title
+  position: relative
+  margin-right: auto
+  width: 40%
+  padding: 80px 0 0
+  background: url(img/tootpaste.png) no-repeat top left
+  color: #222
+  top: 30px
+  left: 30px
+  text-transform: none
+  font-size: 15px
+
+  strong
+    display: block
+    margin-top: 5px
+    line-height: 1
+    font-size: 25px
+    text-transform: uppercase
+    font-weight: normal
+
+  a
+    text-decoration: underline
+
+    &:hover
+      text-decoration: none
+  
+play-button
+  position: relative
+  background: url("img/playicon.png") no-repeat
+  height: 42px
+  width: 42px
+  margin: auto
+  cursor: pointer
+
+overlay
+  display: none
+  background: rgba(0, 0, 0, 0.5)
+  position: absolute
+  top: $headerHeight
+  bottom: 0
+  right: 0
+  left: 0
+
+  sub-nav
+    background: #ffffff
+    padding: 20px 0
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    
+    &[green]
+      background: $greenBackground
+
+    &[blue]
+      background: $blueBackground
+
+    &[pink]
+      background: $pinkBackground
+
+    arrow
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 0 20px 20px 20px
+      border-color: transparent transparent $greenBackground transparent
+      position: absolute
+      top: -20px
+
+    &[green]
+      arrow
+        border-color: transparent transparent $greenBackground transparent
+        left: 220px
+
+      li
+        border-color: #a8e4bf
+
+      a:hover
+        background: #2ba259
+
+    &[blue]
+      arrow
+        border-color: transparent transparent $blueBackground transparent
+        left: 130px
+
+      li
+        border-color: #a8d7e3
+
+      a:hover
+        background: #2a89a0
+
+    &[pink]
+      arrow
+        border-color: transparent transparent $pinkBackground transparent
+        left: 320px
+
+      li
+        border-color: #ddafcc
+
+      a:hover
+        background: #943873
+
+    ul
+      width: 850px
+      margin-left: 110px
+      
+      li
+        width: 31%
+        float: left
+        margin-right: 2.3%
+        border-bottom: solid 1px
+        border-top: solid 1px
+        margin-top: -1px
+        padding: 2px 0
+
+    a
+      color: #fff
+      opacity: 0.9
+      display: block
+      padding: 1rem 0.8rem
+      font-size: 15px
+      line-height: 15px
+      font-weight: 100
+      letter-spacing: 1px
+      transition: color 0.2s, background 0.2s
+
+      &:hover
+        opacity: 1
+
+[layout]
+  display: flex
+  align-items: stretch
+  flex-wrap: nowrap
+
+  &[center]
+    align-items: center
+
+  &[start]
+    align-items: flex-start
+
+  &[end]
+    align-items: flex-end
+
+  &[wrap]
+    flex-wrap: wrap
+
+  &[horizontal]
+    flex-direction: row
+
+  &[vertical]
+    flex-direction: column
+
+  &[fit]
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+
+  [flex]
+    flex: auto
+
+    &[one]
+      flex: 1
+
+    &[two]
+      flex: 2
+
+    &[tree]
+      flex: 3
+
+    &[four]
+      flex: 4
+
+    &[five]
+      flex: 5
+
+    &[fix]
+      flex: 6
+
+    &[seven]
+      flex: 7
+
+    &[eight]
+      flex: 8
+
+    &[nine]
+      flex: 9
+
+    &[ten]
+      flex: 10
+
+    &[eleven]
+      flex: 11
+
+    &[twelve]
+      flex: 12
+
+
+[show-on-large]
+  display: none
+
+@media (min-width: 1200px)
+  [show-on-large]
+    display: inherit
+
+@media (max-width: 750px)
+  body,
+  html
+    height: auto
+  
+  [layout][fit]
+    position: relative
+
+  main[layout]
+    display: block
+
+  row
+    display: block !important
+
+  main
+    display: block
+
+  cart
+    height: 250px
+
+    &#pi-rating
+      height: 420px
+
+    &#what-is-in-products
+      height: 300px
+
+    &#products
+      height: 300px
+
+    &#mobile-app,
+    &#bio-shops
+      height: 300px
+
+
+product
+  display: block
+  width: 200px
+  height: 200px
+  margin: 0.5rem
+  padding: 0.5rem
+  float: left
+  position: relative
+  cursor: pointer
+  
+  &:hover
+    background: #eee
+  
+  picture
+    display: block
+    height: 80%
+    background: #999
+
+  name
+    font-weight: 600
+    line-height: 1.4rem
+    font-size: 1rem
+    display: block
+    overflow: hidden
+    text-overflow: ellipsis
+    
+  rating
+    background: #000
+    color: #ffffff
+    text-align: center
+    padding: 0.1rem 0.3rem
+    position: absolute
+    top: 1rem
+    right: 1rem
+    display: inline-block
+
+  discription
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    display: block
+
+// Procut page
+
+.rating
+  background: #30a41e
+  color: #fff
+  padding: 10px
+  font-size: 40px
+  margin-left: 20px
+  width: 100px
+  display: block
+  text-align: center
+
+[subrating-row]
+  padding: 5px
+  border-bottom: solid 1px #eee
+
+  &[first]
+    border-top: solid 1px #eee
+    margin-top: 20px
+
+  .description
+    padding: 10px
+    text-align: left
+
+  .title
+    padding: 10px
+    font-weight: bold
+
+.subrating
+  background: #207212
+  color: #fff
+  padding: 5px
+  font-size: 20px
+  margin-left: 20px
+  width: 40px
+  display: block
+  text-align: center
+
+[list]
+  margin: 0
+  padding: 5px 10px
+  overflow: auto
+  
+  li
+    margin: 5px 0
+    padding: 10px 0 10px 8px
+    border-left: solid 15px orange
+    list-style: none
+    
+    &:hover
+      background: #eee
+      cursor: pointer
+
+[comment]
+  margin: 10px
+  padding: 10px 30px 10px 0
+  border-bottom: solid 1px #999
+  
+  [img]
+    width: 50px
+    height: 50px
+    background: #eee
+
+  [shortcomment]
+    padding: 0 0.5rem
+    
+  [rating]
+    display: inline-block
+    width: 20px
+    height: 20px
+    background: green
+    margin: 0.5rem
+    text-align: center
+    color: #fff
+
+po-rating
+  width: 100px
+  height: 65px
+  background: #fff
+  border: solid 2px #a0c847
+  position: relative
+  padding: 3px
+  display: table
+
+  number
+    background: #87cc58
+    color: #fff
+    width: 75%
+    display: table-cell
+    font-size: 35px
+    line-height: 35px
+    font-weight: 100
+    text-align: center
+    vertical-align: middle
+
+  info
+    margin-left: 1px
+    font-size: 7px
+    display: block
+    position: absolute
+    top: 3px
+    bottom: 3px
+    right: 3px
+    left: 75%
+
+    logo
+      height: 20px
+      width: 20px
+      display: block
+      position: absolute
+      top: 0
+    
+    criteria
+      display: block
+      height: 2px
+      background: #eee
+      margin-top: 2px
+    
+    detail
+      position: absolute
+      bottom: 0
+
+#pi-rating
+  background: #ebece5 url("img/rating.png") no-repeat top center
+  position: relative
+  
+  footer
+    position: absolute
+    bottom: 30px
+    right: 30px
+    left: 30px
+    padding-top: 20px
+    border-top: solid 1px #dededc
+
+    description
+      padding-right: 160px
+      display: block
+      height: 50px
+      text-overflow: ellipsis
+
+    po-rating
+      position: absolute
+      right: 0
+      top: 15px
+
+  & > criteria
+    position: relative
+
+    rating
+      padding: 0.4rem 0.7rem
+      background: #919191
+      color: #fff
+      font-size: 33px
+      font-weight: 100
+      position: absolute
+      
+    h2
+      text-transform: uppercase
+      font-weight: 500
+      font-size: 17px
+
+    &[ingredients]
+      left: 50%
+      width: 110px
+      margin-left: -250px
+      top: 115px
+
+      h2
+        color: #bbcd58
+
+      rating
+        background: rgba(188, 205, 88, 0.9)
+        right: -65px
+        top: 18px
+
+    &[people]
+      left: 50%
+      width: 125px
+      margin-left: 120px
+      top: -30px
+
+      h2
+        color: #84ca55
+
+      rating
+        background: rgba(135, 204, 88, 0.9)
+        left: -80px
+        top: 18px
+
+#mobile-app
+  background: #5cd5c6 url("img/iphone.png") no-repeat right bottom
+
+  cart-top-title
+    margin-right: 120px
+
+  button
+    background: none
+    padding: 10px
+    border: solid 1px #fff
+    color: #fff
+    display: inline-block
+    margin-top: 30px
+    position: relative
+    margin-left: 30px
+    margin-right: 130px
+    
+    &:hover
+      background: rgba(255, 255, 255, 0.1)
+
+#bio-shops
+  background: #e2ded6 url("img/map.png") no-repeat
+  background-size: cover
+
+  cart-top-title
+    color: #000000
+
+    padding-bottom: 60px
+    background: url("img/mapicon.png") no-repeat bottom left
+
+#what-is-in-products
+  background: #f6f6f6 url("img/chemics.png") no-repeat right bottom
+
+#products
+  background: #e8e9e9 url("img/products.png") no-repeat
+  background-size: cover
+
+#fyi-movie-first
+  background: #b6da62 url("img/bio.png") no-repeat
+  background-size: cover
+
+#fyi-movie-second
+  background: #dd841d url("img/gluten.png") no-repeat
+  background-size: cover
+
+#e-list
+  background: #e9ebe2
+
+  cart-top-title
+    color: #000
+    font-weight: 200
+
+  ul
+    margin-top: 15px
+
+    li
+      padding: 3px 20px
+
+      a
+        text-decoration: underline
+        color: #333333
+        font-weight: 200
+
+        &:hover
+          text-decoration: none
