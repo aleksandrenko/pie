@@ -3,3 +3,5 @@ Router.configure({
 });
 
 Router.route('/', 'landingPage');
+
+Router.route('/products', 'productsList');
