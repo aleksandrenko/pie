@@ -4,7 +4,7 @@ Template.reviewsSidebar.helpers({
       {
         author: 'Viktor Dimchev',
         rating: 7.3,
-        createdAt: new Date(2015, 2, 22, 11, 7),
+        createdAt: 'February 22 at 11:07pm',
         text: 'Maecenas sit amet auctor urna. Phasellus bibendum, nibh vel placerat tincidunt,' +
         'tortor felis eleifend turpis, sodales posuere ante enim quis dui. Nulla id velit' +
         'nec ex lobortis ornare. Curabitur scelerisque felis nec orci blandit condimentum.' +
@@ -15,7 +15,7 @@ Template.reviewsSidebar.helpers({
       {
         author: 'Adrian Bobev',
         rating: 6.5,
-        createdAt: new Date(2015, 2, 20, 14, 22),
+        createdAt: 'February 20 at 15:37pm',
         text: 'Maecenas sit amet auctor urna. Phasellus bibendum, nibh vel placerat tincidunt,' +
         'tortor felis eleifend turpis, sodales posuere ante enim quis dui. Nulla id velit' +
         'nec ex lobortis ornare. Curabitur scelerisque felis nec orci blandit condimentum.' +

@@ -8,6 +8,9 @@ var ReviewsSchema = new SimpleSchema({
   text: {
     type: String,
     max: 480
+  },
+  createdAt: {
+    type: Date
   }
 });
 
