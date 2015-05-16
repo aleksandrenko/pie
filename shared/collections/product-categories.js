@@ -3,6 +3,10 @@ var ProductCategoriesSchema = new SimpleSchema({
     type: String,
     max: 80
   },
+  color: {
+    type: String,
+    max: 20
+  },
   subcategories: {
     type: [String]
   }

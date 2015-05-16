@@ -1,0 +1,13 @@
+<template name="navCategory">
+  <category {{color}}>{{name}}</category>
+  <overlay hide>
+    <sub-nav {{color}}>
+      <arrow></arrow>
+      <ul>
+        {{#each subcategory}}
+          <li><a href="#">{{this}}</a></li>
+        {{/each}}
+      </ul>
+    </sub-nav>
+  </overlay>
+</template>
