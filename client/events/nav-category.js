@@ -8,8 +8,12 @@ function _unselectAllCategories() {
 
 Template.navCategory.events({
   "click category": function(event, template) {
-    _unselectAllCategories();
-    event.target.setAttribute('selected', 'true');
+    if (event.target.getAttribute('selected')) {
+      event.target.removeAttribute('selected');
+    } else {
+      _unselectAllCategories();
+      event.target.setAttribute('selected', 'true');
+    }
   },
 
   "click overlay": function(event, template) {

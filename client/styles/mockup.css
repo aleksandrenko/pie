@@ -630,7 +630,9 @@ middle {
     top: 15px;
     right: 20px; }
   middle category {
-    font-size: 12px; }
+    font-size: 12px;
+    margin-bottom: 35px;
+    display: block; }
   middle alternatives products {
     background: none; }
   middle ingridients ul li {
