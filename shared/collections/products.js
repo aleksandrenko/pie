@@ -1,8 +1,8 @@
-var ProductSchema = new SimpleSchema({
+var ProductsSchema = new SimpleSchema({
   name: {
     type: String,
     max: 80,
-    required: true
+    optional: false
   },
   categories: {
     type: [String],
@@ -23,5 +23,5 @@ var ProductSchema = new SimpleSchema({
   }
 });
 
-pie.db.Product = new Mongo.Collection('product');
-pie.db.Product.attachSchema(ProductSchema);
+Products = new Mongo.Collection('products');
+Products.attachSchema(ProductsSchema);

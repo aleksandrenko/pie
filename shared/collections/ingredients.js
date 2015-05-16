@@ -1,4 +1,4 @@
-var IngredientSchema = new SimpleSchema({
+var IngredientsSchema = new SimpleSchema({
   name: {
     type: String,
     max: 80
@@ -15,5 +15,5 @@ var IngredientSchema = new SimpleSchema({
   }
 });
 
-pie.db.Ingredient = new Mongo.Collection("ingredient");
-pie.db.Ingredient.attachSchema(IngredientSchema);
+Ingredients = new Mongo.Collection("ingredients");
+Ingredients.attachSchema(IngredientsSchema);
