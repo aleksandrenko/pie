@@ -1,9 +1,10 @@
 <template name="product">
-    <side style="width: 300px">
-      <img src="./img/{{image}}.png" width="102" height="229" alt=""/>
-      Brand:<br/>
-      <a href="#">{{brand}}</a><br/><br/>
-      Other Products by {{brand}}: <a href="#">119 products</a><br/>
+    <side style="width: 250px">
+      <product-photo>
+        <img src="/img/{{image}}.png" width="102" height="229" alt=""/>
+      </product-photo>
+      Brand: <br/>
+      <a href="#">{{brand}}</a>
     </side>
 
     <middle>
@@ -56,7 +57,7 @@
           <products flex one style="overflow: auto;">
             <product>
               <a href="product.html">
-                <img src="img/sample-product-2.png" width="99" height="205" alt=""/>
+                <img src="/img/sample-product-2.png" width="99" height="205" alt=""/>
                 <name>Паста за зъби с мента/без флуорид 75 мл</name>
                 <po-rating>
                   <number>7.1</number>
@@ -74,7 +75,7 @@
 
             <product>
               <a href="product.html">
-                <img src="img/sample-product-3.png" width="99" height="205" alt=""/>
+                <img src="/img/sample-product-3.png" width="99" height="205" alt=""/>
                 <name>Ароматерапия за тяло с био розово масло</name>
                 <po-rating>
                   <number>8.8</number>
@@ -92,7 +93,7 @@
 
             <product>
               <a href="product.html">
-                <img src="img/sample-product-4.png" width="95" height="205" alt=""/>
+                <img src="/img/sample-product-4.png" width="95" height="205" alt=""/>
                 <name>Крем за ръце с алое, невен и розова вода 30 мл</name>
                 <po-rating>
                   <number>5.1</number>
@@ -112,47 +113,47 @@
       </sub-info>
     </middle>
 
-    <reviews-holder flex style="width: 300px">
-      <review-form>
-        <input placeholder="Write a review" />
-      </review-form>
+  <reviews-holder style="width: 350px">
+    <review-form>
+      <input placeholder="Write a review" />
+    </review-form>
 
-      <reviews>
-        <review>
-          <author>
-            <img src="img/avatar-sample1.png" width="23" height="23" />
-            <simple-rating>7.3</simple-rating>
+    <reviews>
+      <review>
+        <author>
+          <img src="/img/avatar-sample1.png" width="23" height="23" />
+          <simple-rating>7.3</simple-rating>
 
-            <name>Viktor Dimchev</name>
-            <date>February 22 at 11:07pm</date>
-          </author>
+          <name>Viktor Dimchev</name>
+          <date>February 22 at 11:07pm</date>
+        </author>
 
-          <text>
-            Maecenas sit amet auctor urna. Phasellus bibendum, nibh vel placerat tincidunt,
-            tortor felis eleifend turpis, sodales posuere ante enim quis dui. Nulla id velit
-            nec ex lobortis ornare. Curabitur scelerisque felis nec orci blandit condimentum.
-            Pellentesque hendrerit ex at libero tincidunt lobortis. Integer viverra tellus a
-            rutrum blandit. Sed placerat purus hendrerit faucibus scelerisque.
-          </text>
-        </review>
+        <review-text>
+          Maecenas sit amet auctor urna. Phasellus bibendum, nibh vel placerat tincidunt,
+          tortor felis eleifend turpis, sodales posuere ante enim quis dui. Nulla id velit
+          nec ex lobortis ornare. Curabitur scelerisque felis nec orci blandit condimentum.
+          Pellentesque hendrerit ex at libero tincidunt lobortis. Integer viverra tellus a
+          rutrum blandit. Sed placerat purus hendrerit faucibus scelerisque.
+        </review-text>
+      </review>
 
-        <review>
-          <author>
-            <img src="img/avatar-sample2.png" width="23" height="23" />
-            <simple-rating>7.3</simple-rating>
+      <review>
+        <author>
+          <img src="/img/avatar-sample2.png" width="23" height="23" />
+          <simple-rating>7.3</simple-rating>
 
-            <name>Adrian Bobev</name>
-            <date>February 22 at 11:07pm</date>
-          </author>
+          <name>Adrian Bobev</name>
+          <date>February 22 at 11:07pm</date>
+        </author>
 
-          <text>
-            Pellentesque hendrerit ex at libero tincidunt lobortis. Integer viverra tellus
-            a rutrum blandit. Sed placerat purus hendrerit faucibus scelerisque.
-            <br/><br/>
-            Maecenas sit amet auctor urna. Phasellus bibendum, nibh vel placerat tincidunt,
-            tortor felis eleifend turpis, sodales posuere ante enim quis dui.
-          </text>
-        </review>
-      </reviews>
-    </reviews-holder>
+        <review-text>
+          Pellentesque hendrerit ex at libero tincidunt lobortis. Integer viverra tellus
+          a rutrum blandit. Sed placerat purus hendrerit faucibus scelerisque.
+          <br/><br/>
+          Maecenas sit amet auctor urna. Phasellus bibendum, nibh vel placerat tincidunt,
+          tortor felis eleifend turpis, sodales posuere ante enim quis dui.
+        </review-text>
+      </review>
+    </reviews>
+  </reviews-holder>
 </template>
