@@ -1,25 +1,27 @@
 <template name="product">
     <side style="width: 300px">
-      <img src="./img/product.png" width="102" height="229" alt=""/>
-      Brand: <br/>
-      <a href="#">Miessence</a><br/><br/>
-      Other Products by Miessence: <a href="#">119 products</a><br/>
+      <img src="./img/{{image}}.png" width="102" height="229" alt=""/>
+      Brand:<br/>
+      <a href="#">{{brand}}</a><br/><br/>
+      Other Products by {{brand}}: <a href="#">119 products</a><br/>
     </side>
 
     <middle>
       <name>
-        Tresemme Smooth and Silky Vitamin H and Silk Protein Shampoo - 32 Fl. Oz.
+        {{name}}
       </name>
       <category>
-        <a href="">Козматика</a> / <a href="">Шампуани</a>
+        {{#each categories}}
+          <a href="">{{this}}</a> /
+        {{/each}}
       </category>
 
       <po-rating>
-        <number>7.3</number>
+        <number>{{rating}}</number>
         <info>
           <logo></logo>
           <detail>
-            <total>7.2/10</total>
+            <total>{{rating}}/10</total>
             <criteria ingredients></criteria>
             <criteria people></criteria>
           </detail>
@@ -43,16 +45,9 @@
         <ingridients>
           <h3>Съставки</h3>
           <ul>
-            <li><tick red></tick>Propylparaben</li>
-            <li><tick green></tick>Parahydroxybenzoate</li>
-            <li><tick></tick>Methylparaben</li>
-            <li><tick green></tick>Ethylparaben</li>
-            <li><tick></tick>Butylparaben</li>
-            <li><tick yellow></tick>Benzyl-parahydroxybenzoic acid</li>
-            <li><tick></tick>Methyl-parahydroxybenzoic acid</li>
-            <li><tick></tick>Ethyl-parahydroxybenzoic acid</li>
-            <li><tick></tick>Propyl-parahydroxybenzoic acid</li>
-            <li><tick></tick>Butyl-parahydroxybenzoic acid</li>
+            {{#each ingredients}}
+              <li><tick></tick>{{this}}</li>
+            {{/each}}
           </ul>
         </ingridients>
 
@@ -117,29 +112,10 @@
       </sub-info>
     </middle>
 
-    </product-holder>
-
     <reviews-holder flex style="width: 300px">
       <review-form>
         <input placeholder="Write a review" />
       </review-form>
-
-      <!--<textarea name="" id="" cols="30" rows="10"></textarea>-->
-      <!--<rating>Rating: -->
-      <!--<select>-->
-      <!--<option value="">Избери 1 от 10</option>-->
-      <!--<option>1 (най-лошо)</option>-->
-      <!--<option>2</option>-->
-      <!--<option>3</option>-->
-      <!--<option>4</option>-->
-      <!--<option>5</option>-->
-      <!--<option>6</option>-->
-      <!--<option>7</option>-->
-      <!--<option>8</option>-->
-      <!--<option>9</option>-->
-      <!--<option>10 (най-добро)</option>-->
-      <!--</select>-->
-      <!--</rating>-->
 
       <reviews>
         <review>
