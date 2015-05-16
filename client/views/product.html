@@ -1,7 +1,19 @@
 <template name="product">
-  <img src="" alt="" />
-  <p>Some product info here</p>
-  <ul>
-    <li>Ingredient 1</li>
-  </ul>
+  <product>
+    <a href="product.html">
+      <img src="img/sample-product-1.png" width="71" height="180" alt=""/>
+      <name>{{name}}</name>
+      <po-rating>
+        <number>7.3</number>
+        <info>
+          <logo></logo>
+          <detail>
+            <total>7.2/10</total>
+            <criteria ingredients></criteria>
+            <criteria people></criteria>
+          </detail>
+        </info>
+      </po-rating>
+    </a>
+  </product>
 </template>

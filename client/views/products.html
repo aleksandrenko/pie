@@ -1,0 +1,17 @@
+<template name="products">
+  <products flex one style="overflow: auto;">
+    <bar flex layout horizontal>
+      <count flex>234 продукта</count>
+      <filter>
+        Sort by:
+        <select>
+          <option>Rating (descending)</option>
+          <option>Rating (ascending)</option>
+        </select>
+      </filter>
+    </bar>
+    {{#each product}}
+      {{> product}}
+    {{/each}}
+  </products>
+</template>

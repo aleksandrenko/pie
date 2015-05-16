@@ -72,4 +72,20 @@ Meteor.startup(function () {
       ProductCategories.insert(cat);
     });
   }
+
+  if (ProductBrand.find().count() === 0) {
+    [
+      'Pantene Pro-V',
+      'Suave',
+      'L\'Oreal',
+      'Herbal Essences',
+      'VO5',
+      'Matrix',
+      'Dove',
+      'John Frieda',
+      'TRE Semme'
+    ].forEach(function (brand) {
+      ProductBrand.insert({ name: brand });
+    });
+  }
 });
