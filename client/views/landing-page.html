@@ -1,0 +1,91 @@
+<template name="landingPage">
+  <row flex four layout vertical>
+    <cart flex tree layout vertical id="pi-rating">
+
+      <criteria ingredients>
+        <rating>6.5</rating>
+        <h2>Съставки</h2>
+        <ul>
+          <li>Съставки</li>
+          <li>Сертификати</li>
+        </ul>
+      </criteria>
+
+      <criteria people>
+        <rating>8.1</rating>
+        <h2>Обществено мнение</h2>
+        <ul>
+          <li>Медии</li>
+          <li>Потребители</li>
+          <li>Лаборадории</li>
+        </ul>
+      </criteria>
+
+      <footer>
+        <description>
+          Финалната оценка на един продукт е повлияна от оценката на съставките и оценката, която медиите и клиентите сформират.
+        </description>
+        <po-rating>
+          <number>7.3</number>
+          <info>
+            <logo></logo>
+            <detail>
+              <total>7.2/10</total>
+              <criteria ingredients></criteria>
+              <criteria people></criteria>
+            </detail>
+          </info>
+        </po-rating>
+      </footer>
+    </cart>
+    <column flex two layout horizontal>
+      <cart flex one layout vertical id="mobile-app">
+        <cart-top-title>МОБИЛНО ПРИЛОЖЕНИЕ</cart-top-title>
+        <button>ИЗТЕГЛИ</button>
+      </cart>
+      <cart flex one layout vertical id="bio-shops">
+        <cart-top-title>От къде пазарувате?</cart-top-title>
+      </cart>
+    </column>
+  </row>
+  <row flex four layout vertical>
+    <column flex one layout horizontal>
+      <cart flex one layout vertical id="fyi-movie-first">
+        <cart-title>Какво означава "ORGANIC"</cart-title>
+        <play-button></play-button>
+      </cart>
+      <cart flex one layout vertical id="fyi-movie-second">
+        <cart-title>Защо глутена е лош избор?</cart-title>
+        <play-button></play-button>
+      </cart>
+    </column>
+    <cart flex one layout vertical id="what-is-in-products">
+      <cart-left-title>Знаете ли както има във<br/>
+        <strong>Вашата паста за зъби?</strong>
+        <br/>
+        <a href="#">Към статията</a>
+      </cart-left-title>
+    </cart>
+  </row>
+  <row flex two layout vertical show-on-large>
+    <cart flex one layout vertical id="e-list">
+      <cart-top-title>Какво означават E-тата на етикетите</cart-top-title>
+      <ul>
+        <li><a href="#">Регулатори на киселенността</a></li>
+        <li><a href="#">Противо пенливи агенти</a></li>
+        <li><a href="#">Антиоксиданти</a></li>
+        <li><a href="#">Оцветители</a></li>
+        <li><a href="#">Емулгатори</a></li>
+        <li><a href="#">Вкусови подобрители</a></li>
+        <li><a href="#">Изкуствени увкосители</a></li>
+        <li><a href="#">Консерванти</a></li>
+        <li><a href="#">Стабилизатори</a></li>
+        <li><a href="#">Подсладители</a></li>
+        <li><a href="#">Емулгатори</a></li>
+      </ul>
+    </cart>
+    <cart flex one layout vertical id="products">
+      <cart-top-title>Марка продукти на вашето внимание</cart-top-title>
+    </cart>
+  </row>
+</template>
