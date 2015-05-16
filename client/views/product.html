@@ -1,15 +1,21 @@
 <template name="product">
   <product>
-    <a href="product.html">
-      <img src="img/sample-product-1.png" width="71" height="180" alt=""/>
+    <a href="#">
+      <img src="img/{{image}}.png" width="71" height="180" alt=""/>
       <name>{{name}}</name>
       <po-rating>
-        <number>7.3</number>
+        <number>{{raing}}</number>
         <info>
           <logo></logo>
           <detail>
-            <total>7.2/10</total>
-            <criteria ingredients></criteria>
+            <total>{{rating}}/10</total>
+            <criteria ingredients>
+              <ul>
+                {{#each ingredients}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            </criteria>
             <criteria people></criteria>
           </detail>
         </info>

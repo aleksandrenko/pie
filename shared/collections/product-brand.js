@@ -1,8 +1,7 @@
 var ProductBrandSchema = new SimpleSchema({
   name: {
     type: String,
-    max: 80,
-    optional: false
+    max: 80
   }
 });
 

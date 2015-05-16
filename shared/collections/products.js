@@ -1,13 +1,11 @@
 var ProductsSchema = new SimpleSchema({
   name: {
     type: String,
-    max: 80,
-    optional: false
+    max: 80
   },
   brand: {
     type: String,
-    max: 80,
-    optional: false
+    max: 80
   },
   categories: {
     type: [String],
@@ -19,9 +17,11 @@ var ProductsSchema = new SimpleSchema({
   },
   reviews: {
     type: [String],
+    optional: true
   },
   rating: {
-    type: Number
+    type: Number,
+    decimal: true
   },
   image: {
     type: String
