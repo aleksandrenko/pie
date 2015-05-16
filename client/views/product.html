@@ -1,0 +1,182 @@
+<template name="product">
+    <side style="width: 300px">
+      <img src="./img/product.png" width="102" height="229" alt=""/>
+      Brand: <br/>
+      <a href="#">Miessence</a><br/><br/>
+      Other Products by Miessence: <a href="#">119 products</a><br/>
+    </side>
+
+    <middle>
+      <name>
+        Tresemme Smooth and Silky Vitamin H and Silk Protein Shampoo - 32 Fl. Oz.
+      </name>
+      <category>
+        <a href="">Козматика</a> / <a href="">Шампуани</a>
+      </category>
+
+      <po-rating>
+        <number>7.3</number>
+        <info>
+          <logo></logo>
+          <detail>
+            <total>7.2/10</total>
+            <criteria ingredients></criteria>
+            <criteria people></criteria>
+          </detail>
+        </info>
+      </po-rating>
+
+      <sub-ratings>
+        <rating flex layout horizontal>
+          <title>ЗДРАВЕ</title>
+          <info>Този продукт не съдържа съставки, които будят загриженост за здравето.</info>
+          <simple-big-rating yellow>6.5</simple-big-rating>
+        </rating>
+        <rating flex layout horizontal>
+          <title>ОБЩЕСТВО</title>
+          <info>Социални политики, практики и работа, той се поставя тази компания сред най-добрите 50% от фирмите оценяват.</info>
+          <simple-big-rating>7.8</simple-big-rating>
+        </rating>
+      </sub-ratings>
+
+      <sub-info flex layout horizontal>
+        <ingridients>
+          <h3>Съставки</h3>
+          <ul>
+            <li><tick red></tick>Propylparaben</li>
+            <li><tick green></tick>Parahydroxybenzoate</li>
+            <li><tick></tick>Methylparaben</li>
+            <li><tick green></tick>Ethylparaben</li>
+            <li><tick></tick>Butylparaben</li>
+            <li><tick yellow></tick>Benzyl-parahydroxybenzoic acid</li>
+            <li><tick></tick>Methyl-parahydroxybenzoic acid</li>
+            <li><tick></tick>Ethyl-parahydroxybenzoic acid</li>
+            <li><tick></tick>Propyl-parahydroxybenzoic acid</li>
+            <li><tick></tick>Butyl-parahydroxybenzoic acid</li>
+          </ul>
+        </ingridients>
+
+        <alternatives flex>
+          <h3>Подобни продукти</h3>
+          <products flex one style="overflow: auto;">
+            <product>
+              <a href="product.html">
+                <img src="img/sample-product-2.png" width="99" height="205" alt=""/>
+                <name>Паста за зъби с мента/без флуорид 75 мл</name>
+                <po-rating>
+                  <number>7.1</number>
+                  <info>
+                    <logo></logo>
+                    <detail>
+                      <total>7.2/10</total>
+                      <criteria ingredients></criteria>
+                      <criteria people></criteria>
+                    </detail>
+                  </info>
+                </po-rating>
+              </a>
+            </product>
+
+            <product>
+              <a href="product.html">
+                <img src="img/sample-product-3.png" width="99" height="205" alt=""/>
+                <name>Ароматерапия за тяло с био розово масло</name>
+                <po-rating>
+                  <number>8.8</number>
+                  <info>
+                    <logo></logo>
+                    <detail>
+                      <total>7.2/10</total>
+                      <criteria ingredients></criteria>
+                      <criteria people></criteria>
+                    </detail>
+                  </info>
+                </po-rating>
+              </a>
+            </product>
+
+            <product>
+              <a href="product.html">
+                <img src="img/sample-product-4.png" width="95" height="205" alt=""/>
+                <name>Крем за ръце с алое, невен и розова вода 30 мл</name>
+                <po-rating>
+                  <number>5.1</number>
+                  <info>
+                    <logo></logo>
+                    <detail>
+                      <total>7.2/10</total>
+                      <criteria ingredients></criteria>
+                      <criteria people></criteria>
+                    </detail>
+                  </info>
+                </po-rating>
+              </a>
+            </product>
+          </products>
+        </alternatives>
+      </sub-info>
+    </middle>
+
+    </product-holder>
+
+    <reviews-holder flex style="width: 300px">
+      <review-form>
+        <input placeholder="Write a review" />
+      </review-form>
+
+      <!--<textarea name="" id="" cols="30" rows="10"></textarea>-->
+      <!--<rating>Rating: -->
+      <!--<select>-->
+      <!--<option value="">Избери 1 от 10</option>-->
+      <!--<option>1 (най-лошо)</option>-->
+      <!--<option>2</option>-->
+      <!--<option>3</option>-->
+      <!--<option>4</option>-->
+      <!--<option>5</option>-->
+      <!--<option>6</option>-->
+      <!--<option>7</option>-->
+      <!--<option>8</option>-->
+      <!--<option>9</option>-->
+      <!--<option>10 (най-добро)</option>-->
+      <!--</select>-->
+      <!--</rating>-->
+
+      <reviews>
+        <review>
+          <author>
+            <img src="img/avatar-sample1.png" width="23" height="23" />
+            <simple-rating>7.3</simple-rating>
+
+            <name>Viktor Dimchev</name>
+            <date>February 22 at 11:07pm</date>
+          </author>
+
+          <text>
+            Maecenas sit amet auctor urna. Phasellus bibendum, nibh vel placerat tincidunt,
+            tortor felis eleifend turpis, sodales posuere ante enim quis dui. Nulla id velit
+            nec ex lobortis ornare. Curabitur scelerisque felis nec orci blandit condimentum.
+            Pellentesque hendrerit ex at libero tincidunt lobortis. Integer viverra tellus a
+            rutrum blandit. Sed placerat purus hendrerit faucibus scelerisque.
+          </text>
+        </review>
+
+        <review>
+          <author>
+            <img src="img/avatar-sample2.png" width="23" height="23" />
+            <simple-rating>7.3</simple-rating>
+
+            <name>Adrian Bobev</name>
+            <date>February 22 at 11:07pm</date>
+          </author>
+
+          <text>
+            Pellentesque hendrerit ex at libero tincidunt lobortis. Integer viverra tellus
+            a rutrum blandit. Sed placerat purus hendrerit faucibus scelerisque.
+            <br/><br/>
+            Maecenas sit amet auctor urna. Phasellus bibendum, nibh vel placerat tincidunt,
+            tortor felis eleifend turpis, sodales posuere ante enim quis dui.
+          </text>
+        </review>
+      </reviews>
+    </reviews-holder>
+</template>
