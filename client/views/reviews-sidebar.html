@@ -1,0 +1,12 @@
+<template name="reviewsSidebar">
+  <reviews-holder style="width: 350px">
+    <review-form>
+      <input placeholder="Write a review" />
+    </review-form>
+    <reviews>
+      {{#each getReviews}}
+        {{> review}}
+      {{/each}}
+    </reviews>
+  </reviews-holder>
+</template>
