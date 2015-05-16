@@ -4,6 +4,11 @@ var ProductsSchema = new SimpleSchema({
     max: 80,
     optional: false
   },
+  brand: {
+    type: String,
+    max: 80,
+    optional: false
+  },
   categories: {
     type: [String],
     index: true
