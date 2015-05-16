@@ -288,6 +288,8 @@ overlay {
 
   cart {
     height: 250px; }
+    cart#e-list {
+      height: auto; }
     cart#pi-rating {
       height: 420px; }
     cart#what-is-in-products {
@@ -748,3 +750,7 @@ reviews-holder {
       margin-left: 55px;
       font-size: 13px;
       line-height: 1.5; }
+
+.login-text-and-button {
+  margin-right: 15px;
+  color: #eeeeee; }
