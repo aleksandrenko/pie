@@ -199,5 +199,30 @@
       "Natural flavouring"
     ],
     "rating": 7.7
+  },
+  {
+    "name": "Cranberry Big",
+    "brand": "Corny",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Toasted cereal flakes 30%",
+      "Glucose-fructose syrup",
+      "Flour",
+      "Dehydrated cranberry 11%",
+      "Maize flakes",
+      "Brown sugar",
+      "Glucose syrup",
+      "Coconut oil",
+      "Sugar",
+      "Honey",
+      "Malt",
+      "Salt",
+      "Caramelised sugar syrup",
+      "Sunflower oil",
+      "Citric acid",
+      "Sunflower lecithin",
+      "Flavouring"
+    ],
+    "rating": 7.7
   }
 ]
