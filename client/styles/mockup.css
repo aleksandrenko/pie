@@ -401,8 +401,28 @@ po-rating {
   position: relative;
   padding: 3px;
   display: table; }
+  po-rating[great] {
+    border-color: #6ebe5f; }
+    po-rating[great] number {
+      background: #6ebe5f; }
+  po-rating[good] {
+    border-color: #aac14d; }
+    po-rating[good] number {
+      background: #aac14d; }
+  po-rating[ok] {
+    border-color: #bdc14d; }
+    po-rating[ok] number {
+      background: #bdc14d; }
+  po-rating[bad] {
+    border: solid 2px #c8b850; }
+    po-rating[bad] number {
+      background: #c8b850; }
+  po-rating[worst] {
+    border: solid 2px #bb5755; }
+    po-rating[worst] number {
+      background: #bb5755; }
   po-rating number {
-    background: #87cc58;
+    background: #a0c847;
     color: white;
     width: 75%;
     display: table-cell;
