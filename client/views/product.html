@@ -1,118 +1,61 @@
 <template name="product">
-    <side style="width: 250px">
-      <product-photo>
-        <img src="/img/{{image}}.png" width="125" height="205" alt=""/>
-      </product-photo>
-      Brand: <br/>
-      <a href="#">{{brand}}</a>
-    </side>
+  <side style="width: 250px">
+    <product-photo>
+      <img src="/img/{{image}}.png" width="125" height="205" alt=""/>
+    </product-photo>
+    Brand: <br/>
+    <a href="#">{{brand}}</a>
+  </side>
 
-    <middle flex>
-      <name>
-        {{name}}
-      </name>
-      <category>
-        {{#each categories}}
-          <a href="">{{this}}</a> /
-        {{/each}}
-      </category>
+  <middle flex>
+    <name>
+      {{name}}
+    </name>
+    <category>
+      {{#each categories}}
+        <a href="">{{this}}</a> /
+      {{/each}}
+    </category>
 
-      <po-rating>
-        <number>{{rating}}</number>
-        <info>
-          <logo></logo>
-          <detail>
-            <total>{{rating}}/10</total>
-            <criteria ingredients></criteria>
-            <criteria people></criteria>
-          </detail>
-        </info>
-      </po-rating>
+    <po-rating>
+      <number>{{rating}}</number>
+      <info>
+        <logo></logo>
+        <detail>
+          <total>{{rating}}/10</total>
+          <criteria ingredients></criteria>
+          <criteria people></criteria>
+        </detail>
+      </info>
+    </po-rating>
 
-      <sub-ratings>
-        <rating flex layout horizontal>
-          <title>ЗДРАВЕ</title>
-          <info>Този продукт не съдържа съставки, които будят загриженост за здравето.</info>
-          <simple-big-rating yellow>6.5</simple-big-rating>
-        </rating>
-        <rating flex layout horizontal>
-          <title>ОБЩЕСТВО</title>
-          <info>Социални политики, практики и работа, той се поставя тази компания сред най-добрите 50% от фирмите оценяват.</info>
-          <simple-big-rating>7.8</simple-big-rating>
-        </rating>
-      </sub-ratings>
+    <sub-ratings>
+      <rating flex layout horizontal>
+        <title>ЗДРАВЕ</title>
+        <info>Този продукт не съдържа съставки, които будят загриженост за здравето.</info>
+        <simple-big-rating yellow>6.5</simple-big-rating>
+      </rating>
+      <rating flex layout horizontal>
+        <title>ОБЩЕСТВО</title>
+        <info>Социални политики, практики и работа, той се поставя тази компания сред най-добрите 50% от фирмите оценяват.</info>
+        <simple-big-rating>7.8</simple-big-rating>
+      </rating>
+    </sub-ratings>
 
-      <sub-info flex layout horizontal>
-        <ingridients>
-          <h3>Съставки</h3>
-          <ul>
-            {{#each ingredients}}
-              <li><tick></tick>{{this}}</li>
-            {{/each}}
-          </ul>
-        </ingridients>
+    <sub-info flex layout horizontal>
+      <ingridients>
+        <h3>Съставки</h3>
+        <ul>
+          {{#each ingredients}}
+            <li><tick></tick>{{this}}</li>
+          {{/each}}
+        </ul>
+      </ingridients>
 
-        <alternatives flex>
-          <h3>Подобни продукти</h3>
-          <products flex one style="overflow: auto;">
-            <product>
-              <a href="#">
-                <img src="/img/RooBar-Baobab-Ginger.png" width="125" height="205" alt=""/>
-                <name>RooBar Baobab Ginger</name>
-                <po-rating>
-                  <number>7.1</number>
-                  <info>
-                    <logo></logo>
-                    <detail>
-                      <total>7.2/10</total>
-                      <criteria ingredients></criteria>
-                      <criteria people></criteria>
-                    </detail>
-                  </info>
-                </po-rating>
-              </a>
-            </product>
+      {{> alternativeProducts}}
+    </sub-info>
+  </middle>
 
-            <product>
-              <a href="#">
-                <img src="/img/RooBar-Cacao-Nibs.png" width="125" height="205" alt=""/>
-                <name>RooBar Cacao Nibs</name>
-                <po-rating>
-                  <number>8.8</number>
-                  <info>
-                    <logo></logo>
-                    <detail>
-                      <total>7.2/10</total>
-                      <criteria ingredients></criteria>
-                      <criteria people></criteria>
-                    </detail>
-                  </info>
-                </po-rating>
-              </a>
-            </product>
-
-            <product>
-              <a href="#">
-                <img src="/img/RooBar-Hemp-Chia.png" width="125" height="205" alt=""/>
-                <name>RooBar Hemp Chia</name>
-                <po-rating>
-                  <number>5.1</number>
-                  <info>
-                    <logo></logo>
-                    <detail>
-                      <total>7.2/10</total>
-                      <criteria ingredients></criteria>
-                      <criteria people></criteria>
-                    </detail>
-                  </info>
-                </po-rating>
-              </a>
-            </product>
-          </products>
-        </alternatives>
-      </sub-info>
-    </middle>
-
-    {{> reviewsSidebar}}
+  {{> reviewsSidebar}}
 
 </template>

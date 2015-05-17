@@ -1,0 +1,10 @@
+<template name="alternativeProducts">
+  <alternatives flex>
+    <h3>Подобни продукти</h3>
+    <products flex one style="overflow: auto;">
+      {{#each alternative}}
+        {{> productInList}}
+      {{/each}}
+    </products>
+  </alternatives>
+</template>
