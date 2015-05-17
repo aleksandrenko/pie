@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Cosmetics",
+    "color": "blue",
+    "subcategories": [
+      "After Shave",
+      "Body Wash & Cleanser",
+      "Deodorants & Antiperspirants",
+      "Eye & Ear Care",
+      "Makeup",
+      "Medicine Cabinet",
+      "Mouthwash",
+      "Shampoo",
+      "Shaving Cream",
+      "Skin Care",
+      "Soap",
+      "Sunscreen SPF 15 and Above",
+      "Tampons",
+      "Toothpaste"
+    ]
+  },
+  {
+    "name": "Food",
+    "color": "green",
+    "subcategories": [
+      "Batters, Breadings & Coaters",
+      "Biscuit & Scone Mixes",
+      "Brownies",
+      "Bars",
+      "Cakes",
+      "Cinnamon Rolls, Sweet Dough & Danish",
+      "Cookies",
+      "Croissants & Breads",
+      "Donuts",
+      "Extracts, Emulsions & Colors",
+      "Fillings",
+      "Frostings, Specialty Donut and Cake Icings",
+      "Fruit Bit Concentrates",
+      "Glazes",
+      "Griddle Mixes – Pancake & Waffle",
+      "Icing & Glaze Stabilizers",
+      "Latino Products",
+      "Miscellaneous",
+      "Muffins",
+      "Puff Dough",
+      "Spreads & Smears"
+    ]
+  },
+  {
+    "name": "Baby food & cosmetics",
+    "color": "pink",
+    "subcategories": [
+      "Blends",
+      "Second Blends",
+      "Tots",
+      "Mish Mash",
+      "Fruit",
+      "Grain",
+      "Veggie",
+      "Mashups",
+      "Oats"
+    ]
+  }
+]

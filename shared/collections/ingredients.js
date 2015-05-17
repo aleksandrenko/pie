@@ -1,17 +1,21 @@
 var IngredientsSchema = new SimpleSchema({
   name: {
     type: String,
-    max: 80
+    max: 80,
+    unique: true
   },
   description: {
     type: String,
-    max: 240
+    max: 240,
+    optional: true
   },
   category: {
-    type: [String]
+    type: [String],
+    optional: true
   },
   rating: {
-    type: Number
+    type: Number,
+    optional: true
   }
 });
 

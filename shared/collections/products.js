@@ -24,7 +24,8 @@ var ProductsSchema = new SimpleSchema({
     decimal: true
   },
   image: {
-    type: String
+    type: String,
+    optional: true
   }
 });
 
