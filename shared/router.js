@@ -4,7 +4,15 @@ Router.configure({
 
 Router.route('/', 'landingPage');
 
-Router.route('/products', 'productsList');
+Router.route('/products/:category', function () {
+  this.render('productsList', {
+    data: function () {
+      return {
+        products: Products.find({ categories: this.params.category })
+      };
+    }
+  });
+});
 
 Router.route('/product/:id', function () {
   this.render('product', {
