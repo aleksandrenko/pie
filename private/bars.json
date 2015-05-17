@@ -18,7 +18,7 @@
       "MILK",
       "EGG AND SOY"
     ],
-    "rating": 8.1,
+    "rating": 5.1,
     "image": "Snickers"
   },
   {
@@ -41,7 +41,8 @@
       "MILK",
       "EGG AND SOY"
     ],
-    "rating": 6.6
+    "rating": 4.6,
+    "image": "Snikers-almond"
   },
   {
     "name": "Bounty",
@@ -62,7 +63,8 @@
       "Natural Flavour (Vanilla Extract)",
       "Peanuts"
     ],
-    "rating": 8.1
+    "rating": 6.1,
+    "image": "Bounty"
   },
   {
     "name": "Mars",
@@ -82,7 +84,7 @@
       "Egg White",
       "Natural Flavour (Vanilla Extract)"
     ],
-    "rating": 6.3,
+    "rating": 4.3,
     "image": "Mars"
   },
   {

@@ -23,7 +23,8 @@
       "Barley 2%",
       "Glucose syrup"
     ],
-    "rating": 7.5
+    "rating": 7.5,
+    "image": "Corny-Small-Chocolate"
   },
   {
     "name": "Chocolate Banana",
@@ -46,7 +47,8 @@
       "Sunflower lecithin",
       "Natural flavourings"
     ],
-    "rating": 7.6
+    "rating": 7.6,
+    "image": "Corny-Small-Banana"
   },
   {
     "name": "Dark Chocolate",
@@ -70,7 +72,8 @@
       "Emulsifier sunflower lecithins",
       "Natural cocoa flavouring"
     ],
-    "rating": 7.6
+    "rating": 7.6,
+    "image": "Corny-Dark-Chocolate"
   },
   {
     "name": "Coconut",
@@ -91,7 +94,8 @@
       "Emulsifiers: Sunflower lecithin",
       "Natural flavourings"
     ],
-    "rating": 7.2
+    "rating": 7.2,
+    "image": "Corny-Small-Coconut"
   },
   {
     "name": "Hazelnut",
@@ -114,7 +118,8 @@
       "Emulsifiers: Sunflower lecithin",
       "Natural flavourings"
     ],
-    "rating": 6.6
+    "rating": 6.6,
+    "image": "Corny-Small-Nuts"
   },
   {
     "name": "Strawberry and Yoghurt",
@@ -144,7 +149,8 @@
       "Sunflower lecithin",
       "Flavourings"
     ],
-    "rating": 7.4
+    "rating": 7.4,
+    "image": "Corny-Strawberry"
   },
   {
     "name": "Milk",
@@ -173,7 +179,8 @@
       "Sunflower lecithin",
       "Flavourings"
     ],
-    "rating": 7.5
+    "rating": 7.5,
+    "image": "Corny-Milk"
   },
   {
     "name": "Dark & White",
@@ -198,7 +205,8 @@
       "Natural bourbon-vanilla flavouring",
       "Natural flavouring"
     ],
-    "rating": 7.7
+    "rating": 7.7,
+    "image": "Corny-Milk-Dark"
   },
   {
     "name": "Cranberry Big",
@@ -223,6 +231,7 @@
       "Sunflower lecithin",
       "Flavouring"
     ],
-    "rating": 7.7
+    "rating": 7.7,
+    "image": "Corny-Cranberry"
   }
 ]
