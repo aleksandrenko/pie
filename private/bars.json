@@ -18,7 +18,8 @@
       "MILK",
       "EGG AND SOY"
     ],
-    "rating": 8.1
+    "rating": 8.1,
+    "image": "Snickers"
   },
   {
     "name": "Snickers Almond",
@@ -81,7 +82,8 @@
       "Egg White",
       "Natural Flavour (Vanilla Extract)"
     ],
-    "rating": 6.3
+    "rating": 6.3,
+    "image": "Mars"
   },
   {
     "name": "Twix",
@@ -101,6 +103,7 @@
       "Salt",
       "Natural Flavour (Vanilla Extract)"
     ],
-    "rating": 6.6
+    "rating": 6.6,
+    "image": "Twix"
   }
 ]

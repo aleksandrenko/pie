@@ -15,7 +15,8 @@
       "Ingredient from organic agriculture.",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 7.8
+    "rating": 7.8,
+    "image": "RooBar-Protein-Chia-Spirulina"
   },
   {
     "name": "Chia & Chocolate Protein Bar",
@@ -31,7 +32,8 @@
       "Cacao powder",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 7.4
+    "rating": 7.4,
+    "image": "RooBar-Protein-Chia-Chocolate"
   },
   {
     "name": "Liquorice & Chilli",
@@ -46,7 +48,8 @@
       "Himalayan salt",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 8.4
+    "rating": 8.4,
+    "image": "RooBar-Liquorice-Chili"
   },
   {
     "name": "Mulberry & Vanilla",
@@ -59,7 +62,8 @@
       "Bourbon-Vanilla (0,3%)",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 7.7
+    "rating": 7.7,
+    "image": "RooBar-Mulberry-Vanilla"
   },
   {
     "name": "Baobab & Ginger",
@@ -72,7 +76,8 @@
       "Ginger (0,5%)",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 6.3
+    "rating": 6.3,
+    "image": "RooBar-Baobab-Ginger"
   },
   {
     "name": "Hemp protein & Chia",
@@ -85,7 +90,8 @@
       "Chia seeds (5%)",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 7.1
+    "rating": 7.1,
+    "image": "RooBar-Hemp-Chia"
   },
   {
     "name": "Inca berry",
@@ -99,7 +105,8 @@
       "Orange oil (0,05%)",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 6.9
+    "rating": 6.9,
+    "image": "RooBar-inca-orange"
   },
   {
     "name": "Goji berry",
@@ -112,7 +119,8 @@
       "Cacao powder",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 6.6
+    "rating": 6.6,
+    "image": "RooBar-Godj-Berry"
   },
   {
     "name": "Cacao Nibs",
@@ -125,7 +133,8 @@
       "Cacao powder",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 9.2
+    "rating": 9.2,
+    "image": "RooBar-Cacao-Nibs"
   },
   {
     "name": "Maca & Cranberry",
@@ -141,7 +150,8 @@
       "Cacao powder",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 9.0
+    "rating": 9.0,
+    "image": "RooBar-Maca-Cranberry"
   },
   {
     "name": "Chia & Coconut",
@@ -154,7 +164,8 @@
       "Lemon oil",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 7.7
+    "rating": 7.7,
+    "image": "RooBar-Chia-Coconut"
   },
   {
     "name": "Rosehip",
@@ -167,7 +178,8 @@
       "Rose hip powder (4%)",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 5.9
+    "rating": 5.9,
+    "image": "RooBar-Rosehip"
   },
   {
     "name": "Cacao",
@@ -179,6 +191,7 @@
       "Cacao powder (6%)",
       "Raw ingredient from organic agriculture"
     ],
-    "rating": 7.8
+    "rating": 7.8,
+    "image": "RooBar-Cacao"
   }
 ]
