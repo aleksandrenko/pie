@@ -28,6 +28,7 @@ Meteor.startup(function () {
           'Batters, Breadings & Coaters',
           'Biscuit & Scone Mixes',
           'Brownies',
+          'Bars',
           'Cakes',
           'Cinnamon Rolls, Sweet Dough & Danish',
           'Cookies',

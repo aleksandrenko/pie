@@ -1,0 +1,184 @@
+[
+  {
+    "name": "Chia & Spirulina Protein Bar",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Cashew",
+      "Rice protein (20%)",
+      "Coconut blossom nectar",
+      "Ground chia seeds (5%)",
+      "Spirulina (3%)",
+      "Ginger",
+      "Lemon oil",
+      "Ingredient from organic agriculture.",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 7.8
+  },
+  {
+    "name": "Chia & Chocolate Protein Bar",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Cashew",
+      "Rice protein (20%)",
+      "Cacao butter (10%)",
+      "Ground chia seeds (5%)",
+      "Coconut blossom nectar",
+      "Cacao powder",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 7.4
+  },
+  {
+    "name": "Liquorice & Chilli",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Cashew",
+      "Liquorice root* (0,5%)",
+      "Anise",
+      "Bird’s Eye chili (0,2%)",
+      "Himalayan salt",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 8.4
+  },
+  {
+    "name": "Mulberry & Vanilla",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Cashew",
+      "Mulberry (20%)",
+      "Bourbon-Vanilla (0,3%)",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 7.7
+  },
+  {
+    "name": "Baobab & Ginger",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Cashew",
+      "Baobab (6%)",
+      "Ginger (0,5%)",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 6.3
+  },
+  {
+    "name": "Hemp protein & Chia",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Almonds",
+      "Hemp protein (18%)",
+      "Chia seeds (5%)",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 7.1
+  },
+  {
+    "name": "Inca berry",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Almonds",
+      "Ginger",
+      "Inca berries (15%)",
+      "Orange oil (0,05%)",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 6.9
+  },
+  {
+    "name": "Goji berry",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Goji berry (10%)",
+      "Dried coconut",
+      "Cacao powder",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 6.6
+  },
+  {
+    "name": "Cacao Nibs",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Almonds (26%)",
+      "Cacao nibs (6%)",
+      "Cacao powder",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 9.2
+  },
+  {
+    "name": "Maca & Cranberry",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Almonds",
+      "Cranberries",
+      "Apple juice concentrate",
+      "Sunflower oil",
+      "Maca powder (3%)",
+      "Cacao powder",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 9.0
+  },
+  {
+    "name": "Chia & Coconut",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Dried coconut (22%)",
+      "Chia seeds (8%)",
+      "Lemon oil",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 7.7
+  },
+  {
+    "name": "Rosehip",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Almonds (20%)",
+      "Raisins",
+      "Rose hip powder (4%)",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 5.9
+  },
+  {
+    "name": "Cacao",
+    "brand": "Roobar",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Dates",
+      "Cashew",
+      "Cacao powder (6%)",
+      "Raw ingredient from organic agriculture"
+    ],
+    "rating": 7.8
+  }
+]

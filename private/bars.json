@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Snickers",
+    "brand": "MARS Chocolate",
+    "categories": ["Bars"],
+    "ingredients": [
+      "MILK CHOCOLATE",
+      "PEANUTS",
+      "CORN SYRUP",
+      "SUGAR",
+      "PALM OIL",
+      "SKIM MILK",
+      "LACTOSE",
+      "PARTIALLY HYDROGENATED SOYBEAN OIL",
+      "SALT",
+      "EGG WHITES",
+      "ARTIFICIAL FLAVOR",
+      "MILK",
+      "EGG AND SOY"
+    ],
+    "rating": 8.1
+  },
+  {
+    "name": "Snickers Almond",
+    "brand": "MARS Chocolate",
+    "categories": ["Bars"],
+    "ingredients": [
+      "MILK CHOCOLATE",
+      "CORN SYRUP",
+      "ALMONDS",
+      "SUGAR",
+      "PALM OIL",
+      "SKIM MILK",
+      "LESS THAN 2% LACTOSE - LACTOSE",
+      "SALT",
+      "HYDROGENATED PALM KERNEL OIL AND/OR PALM OIL",
+      "EGG WHITES",
+      "CHOCOLATE",
+      "ARTIFICIAL FLAVOR",
+      "MILK",
+      "EGG AND SOY"
+    ],
+    "rating": 6.6
+  },
+  {
+    "name": "Bounty",
+    "brand": "MARS Chocolate",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Sugar",
+      "Desiccated Coconut",
+      "Glucose Syrup (Sources include Wheat)",
+      "Milk Solids",
+      "Cocoa Butter",
+      "Cocoa Mass",
+      "Invert Sugar",
+      "Vegetable Fat",
+      "Emulsifiers (471 Soy Lecithin)",
+      "Humectant (Glycerol)",
+      "Salt",
+      "Natural Flavour (Vanilla Extract)",
+      "Peanuts"
+    ],
+    "rating": 8.1
+  },
+  {
+    "name": "Mars",
+    "brand": "MARS Chocolate",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Sugar",
+      "Glucose Syrup (Sources include Wheat)",
+      "Milk Solids",
+      "Vegetable Fat",
+      "Cocoa Butter",
+      "Cocoa Mass",
+      "Barley Malt Extract",
+      "Cocoa Powder",
+      "Emulsifier (Soy Lecithin)",
+      "Salt",
+      "Egg White",
+      "Natural Flavour (Vanilla Extract)"
+    ],
+    "rating": 6.3
+  },
+  {
+    "name": "Twix",
+    "brand": "MARS Chocolate",
+    "categories": ["Bars"],
+    "ingredients": [
+      "Sugar",
+      "Flour (Sources include Wheat)",
+      "Glucose Syrup (Sources Include Wheat)",
+      "Milk Solids",
+      "Vegetable Fat",
+      "Cocoa Butter",
+      "Cocoa Mass",
+      "Glucose",
+      "Cocoa Powder",
+      "Emulsifier (Soy Lecithin)",
+      "Salt",
+      "Natural Flavour (Vanilla Extract)"
+    ],
+    "rating": 6.6
+  }
+]
