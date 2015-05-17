@@ -70,7 +70,7 @@ app {
         display: block !important; }
     app header search {
       position: relative; }
-      app header search a#search-button {
+      app header search #search-button {
         display: inline-block;
         background: url("/img/search-icon.png") no-repeat;
         width: 24px;
@@ -80,8 +80,10 @@ app {
         right: 19px;
         text-indent: 100px;
         opacity: 0;
-        transition: opacity 0.2s; }
-      app header search input {
+        transition: opacity 0.2s;
+        border: none;
+        outline: none; }
+      app header search input[type="text"] {
         background: #333333;
         padding: 9px 35px 9px 10px;
         border-radius: 3px;
@@ -91,12 +93,12 @@ app {
         width: 150px;
         outline: none;
         transition: background 0.2s, width 0.2s; }
-        app header search input:active, app header search input:hover, app header search input:focus {
+        app header search input[type="text"]:active, app header search input[type="text"]:hover, app header search input[type="text"]:focus {
           background: white;
           width: 250px; }
-          app header search input:active + a#search-button, app header search input:hover + a#search-button, app header search input:focus + a#search-button {
+          app header search input[type="text"]:active + #search-button, app header search input[type="text"]:hover + #search-button, app header search input[type="text"]:focus + #search-button {
             opacity: 1; }
-        app header search input:active, app header search input:focus {
+        app header search input[type="text"]:active, app header search input[type="text"]:focus {
           box-shadow: 0 0 1px 3px #638b9b; }
 
 cart {
