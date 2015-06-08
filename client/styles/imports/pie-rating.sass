@@ -1,0 +1,197 @@
+@import 'config'
+@import 'mixins'
+
+pie-rating
+  position: relative
+  display: table
+  padding: 3px
+  width: 100px
+  height: 65px
+  border: solid 2px #999
+  background: #fff
+
+  &[large]
+    @include scale(1.5)
+
+  &[medium]
+    @include scale(0.8)
+
+  &[small]
+    @include scale(0.6)
+
+  &[tiny]
+    @include scale(0.4)
+
+  &[simple]
+    border: none
+    width: 60px
+    height: 40px
+    padding: 0
+
+    rating
+      font-size: 25px
+      line-height: 40px
+
+  &[minimal]
+    border: none
+    width: 40px
+    height: 28px
+    padding: 0
+
+    rating
+      font-size: 15px
+      line-height: 28px
+
+  //ratings from 1-10
+
+  &[one]
+    border-color: $rating-one-color
+    color: $rating-one-color
+    rating
+      background: $rating-one-color
+
+  [one] indication
+    background: $rating-one-color
+    width: 10%
+
+  &[two]
+    border-color: $rating-two-color
+    color: $rating-two-color
+    rating
+      background: $rating-two-color
+
+  [two] indication
+    background: $rating-two-color
+    width: 20%
+
+  &[three]
+    border-color: $rating-three-color
+    color: $rating-three-color
+    rating
+      background: $rating-three-color
+
+  [three] indication
+    background: $rating-three-color
+    width: 30%
+
+  &[four]
+    border-color: $rating-four-color
+    color: $rating-four-color
+    rating
+      background: $rating-four-color
+
+  [four] indication
+    background: $rating-four-color
+    width: 40%
+
+  &[five]
+    border-color: $rating-five-color
+    color: $rating-five-color
+    rating
+      background: $rating-five-color
+
+  [five] indication
+    background: $rating-five-color
+    width: 50%
+
+  &[six]
+    border-color: $rating-six-color
+    color: $rating-six-color
+    rating
+      background: $rating-six-color
+
+  [six] indication
+    background: $rating-six-color
+    width: 60%
+
+  &[seven]
+    border-color: $rating-seven-color
+    color: $rating-seven-color
+    rating
+      background: $rating-seven-color
+
+  [seven] indication
+    background: $rating-seven-color
+    width: 70%
+
+  &[eight]
+    border-color: $rating-eight-color
+    color: $rating-eight-color
+    rating
+      background: $rating-eight-color
+
+  [eight] indication
+    background: $rating-eight-color
+    width: 80%
+
+  &[nine]
+    border-color: $rating-nine-color
+    color: $rating-nine-color
+    rating
+      background: $rating-nine-color
+
+  [nine] indication
+    background: $rating-nine-color
+    width: 90%
+
+  &[ten]
+    border-color: $rating-ten-color
+    color: $rating-ten-color
+    rating
+      background: $rating-ten-color
+
+  [ten] indication
+    background: $rating-ten-color
+    width: 100%
+
+  rating
+    display: table-cell
+    width: 75%
+    background: #999
+    color: #fff
+    vertical-align: middle
+    text-align: center
+    font-weight: 100
+    font-size: 35px
+    line-height: 35px
+
+  info
+    position: absolute
+    top: 3px
+    right: 3px
+    bottom: 3px
+    left: 75%
+    display: block
+    margin-left: 1px
+    font-size: 7px
+
+    logo
+      position: absolute
+      top: 0
+      display: block
+      width: 20px
+      height: 20px
+      font-size: 14px
+
+    total i
+      font-size: 6px
+      display: block
+      font-style: normal
+      margin-bottom: 4px
+      margin-top: 1px
+
+    criteria
+      display: block
+      margin-top: 2px
+      height: 2px
+      background: #eee
+
+      indication
+        width: 0
+        display: block
+        height: 2px
+
+    detail
+      position: absolute
+      bottom: 0
+      left: 0

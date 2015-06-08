@@ -1,0 +1,11 @@
+@mixin transition($transition-property, $transition-time: 0.2s, $easing: ease-in-out)
+  -webkit-transition: $transition-property $transition-time $easing
+  -moz-transition: $transition-property $transition-time $easing
+  -ms-transition: $transition-property $transition-time $easing
+  -o-transition: $transition-property $transition-time $easing
+  transition: $transition-property $transition-time $easing
+
+@mixin scale($factor)
+  -ms-transform: scale($factor, $factor)
+  -webkit-transform: scale($factor, $factor)
+  transform: scale($factor, $factor)
