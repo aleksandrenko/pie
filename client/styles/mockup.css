@@ -240,54 +240,6 @@ overlay {
       overlay sub-nav a:hover {
         opacity: 1; }
 
-[layout] {
-  display: flex;
-  align-items: stretch;
-  flex-wrap: nowrap; }
-  [layout][center] {
-    align-items: center; }
-  [layout][start] {
-    align-items: flex-start; }
-  [layout][end] {
-    align-items: flex-end; }
-  [layout][wrap] {
-    flex-wrap: wrap; }
-  [layout][horizontal] {
-    flex-direction: row; }
-  [layout][vertical] {
-    flex-direction: column; }
-  [layout][fit] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; }
-  [layout] [flex] {
-    flex: auto; }
-    [layout] [flex][one] {
-      flex: 1; }
-    [layout] [flex][two] {
-      flex: 2; }
-    [layout] [flex][tree] {
-      flex: 3; }
-    [layout] [flex][four] {
-      flex: 4; }
-    [layout] [flex][five] {
-      flex: 5; }
-    [layout] [flex][fix] {
-      flex: 6; }
-    [layout] [flex][seven] {
-      flex: 7; }
-    [layout] [flex][eight] {
-      flex: 8; }
-    [layout] [flex][nine] {
-      flex: 9; }
-    [layout] [flex][ten] {
-      flex: 10; }
-    [layout] [flex][eleven] {
-      flex: 11; }
-    [layout] [flex][twelve] {
-      flex: 12; }
 
 [show-on-large] {
   display: none; }
