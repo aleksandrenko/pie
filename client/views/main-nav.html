@@ -1,7 +1,11 @@
 <template name="mainNav">
-  <nav flex>
-    {{#each category}}
-      {{> navCategory}}
-    {{/each}}
-  </nav>
+    <nav flex>
+      <categories>
+        <nav-toggle-button>nav</nav-toggle-button>
+        <nav-header>Main Navigation</nav-header>
+        {{#each category}}
+          {{> navCategory}}
+        {{/each}}
+      </categories>
+    </nav>
 </template>

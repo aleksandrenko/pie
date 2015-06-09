@@ -1,0 +1,67 @@
+@import 'variables'
+
+search
+  position: relative
+  display: block
+  width: $searchWidth
+
+  input,
+  button
+    position: absolute
+    top: 50%
+    right: 0
+    margin-top: -1rem
+
+  input
+    padding-right: 2rem
+    width: $searchWidth
+    height: 2rem
+    outline: none
+    border: none
+    border-radius: 2px
+    background: #fafafa
+    @include transition(background)
+    line-height: 2rem
+
+    &:focus
+      background: #ffffff
+
+  button
+    padding: 0
+    width: 2rem
+    height: 2rem
+    outline: none
+    border: none
+    background: none
+
+  suggestions
+    position: absolute
+    top: 60px
+    right: 0
+    left: 0
+    z-index: 100
+    overflow: auto
+    max-height: 300px
+    width: $searchWidth
+    border-bottom-right-radius: 2px
+    border-bottom-left-radius: 2px
+    background: #fff
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2)
+
+    ul
+
+      li
+        overflow: hidden
+        padding: 0 0.85rem
+        border-bottom: solid 1px #e5e5e5
+        color: #585858
+        text-overflow: ellipsis
+        line-height: 40px
+        cursor: pointer
+        @include transition(background)
+
+        &:hover
+          background: #fafafa
+
+        match
+          color: #72b9ad

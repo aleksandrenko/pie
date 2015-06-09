@@ -1,13 +1,15 @@
 <template name="navCategory">
-  <category {{color}}>{{name}}</category>
-  <overlay hide>
-    <sub-nav {{color}}>
-      <arrow></arrow>
+  <category {{color}}>
+    <a href="#">{{name}}</a>
+    <sub-nav>
+      <subnav-header>&lt; back to</subnav-header>
+      <subcategories>
       <ul>
         {{#each subcategory}}
           <li><a href="/products/{{this}}">{{this}}</a></li>
         {{/each}}
       </ul>
+      </subcategories>
     </sub-nav>
-  </overlay>
+  </category>
 </template>

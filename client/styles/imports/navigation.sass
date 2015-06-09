@@ -1,0 +1,126 @@
+@import 'variables'
+
+nav
+  color: #eee
+
+  category > a
+    position: relative
+    display: inline-block
+    overflow: hidden
+    padding: 0 1rem
+    color: #ffffff
+    text-overflow: ellipsis
+    line-height: $headerHeight
+    @include transition(opacity)
+    opacity: 0.7
+
+    &:hover
+      opacity: 1
+
+  nav-header,
+  nav-toggle-button,
+  subnav-header
+    display: none
+
+  [selected]
+    > a
+      opacity: 1
+
+      &:before
+        position: absolute
+        bottom: 0
+        left: 50%
+        display: block
+        margin-left: -15px
+        width: 0
+        height: 0
+        border-right: 15px solid transparent
+        border-bottom: 15px solid #fff
+        border-left: 15px solid transparent
+        content: ''
+
+  [selected][blue]
+    > a
+      color: $blueBackground
+
+      &:before
+        border-bottom-color: $blueBackground
+
+    subcategories
+      background: $blueBackground
+
+  [selected][pink]
+    > a
+      color: $pinkBackground
+
+      &:before
+        border-bottom-color: $pinkBackground
+
+    subcategories
+      background: $pinkBackground
+
+  [selected][green]
+    > a
+      color: $greenBackground
+
+      &:before
+        border-bottom-color: $greenBackground
+
+    subcategories
+      background: $greenBackground
+
+  category[selected]
+    subnav
+      left: 0
+      display: block
+      padding: 0 1rem
+      @include transition(left)
+      line-height: 48px
+
+  subnav
+    position: fixed
+    top: $headerHeight
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 11
+    display: none
+    background: rgba(0, 0, 0, 0.7)
+
+    subcategories
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      overflow-y: auto
+      padding: 1rem 0 1rem 90px
+
+    subcategories ul
+      max-width: 900px
+
+      &:after
+        display: block
+        clear: both
+        content: ''
+
+      li:nth-last-child(-n+4) a
+        border-bottom: solid 1px rgba(255, 255, 255, 0.4)
+
+      li a
+        display: block
+        float: left
+        overflow: hidden
+        margin-right: 2%
+        padding: 0 0.85rem
+        width: 23%
+        height: 48px
+        border-top: solid 1px rgba(255, 255, 255, 0.4)
+        color: #ffffff
+        text-overflow: ellipsis
+        line-height: 48px
+        opacity: 0.8
+        @include transition(background)
+
+        &:hover
+          background: rgba(255, 255, 255, 0.1)
+

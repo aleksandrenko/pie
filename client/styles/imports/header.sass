@@ -1,0 +1,23 @@
+app-header
+  background: $headerBackgroundColor
+  color: #eee
+  height: $headerHeight
+  white-space: nowrap
+  flex: none
+
+  logo
+    h1
+      background: url("../img/pi-logo.png") no-repeat center center
+      display: block
+      height: $headerHeight
+      opacity: 0.9
+      overflow: hidden
+      text-indent: 1000px
+      white-space: nowrap
+      @include transition(opacity)
+      width: 90px
+
+      &:hover
+        opacity: 1
+
+
