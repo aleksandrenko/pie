@@ -1,15 +1,15 @@
 <template name="navCategory">
   <category {{color}}>
-    <a href="#">{{name}}</a>
-    <sub-nav>
+    <name>{{name}}</name>
+    <subnav>
       <subnav-header>&lt; back to</subnav-header>
       <subcategories>
-      <ul>
-        {{#each subcategory}}
-          <li><a href="/products/{{this}}">{{this}}</a></li>
-        {{/each}}
-      </ul>
+        <ul>
+          {{#each subcategory}}
+            <li><a href="/products/{{this}}">{{this}}</a></li>
+          {{/each}}
+        </ul>
       </subcategories>
-    </sub-nav>
+    </subnav>
   </category>
 </template>
