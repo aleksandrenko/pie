@@ -65,16 +65,6 @@ play-button {
 [show-on-large] {
   display: none; }
 
-.rating {
-  background: #30a41e;
-  color: white;
-  padding: 10px;
-  font-size: 40px;
-  margin-left: 20px;
-  width: 100px;
-  display: block;
-  text-align: center; }
-
 [subrating-row] {
   padding: 5px;
   border-bottom: solid 1px #eeeeee; }
@@ -130,69 +120,6 @@ play-button {
     text-align: center;
     color: white; }
 
-po-rating {
-  width: 100px;
-  height: 65px;
-  background: white;
-  border: solid 2px #a0c847;
-  position: relative;
-  padding: 3px;
-  display: table; }
-  po-rating[great] {
-    border-color: #6ebe5f; }
-    po-rating[great] number {
-      background: #6ebe5f; }
-  po-rating[good] {
-    border-color: #aac14d; }
-    po-rating[good] number {
-      background: #aac14d; }
-  po-rating[ok] {
-    border-color: #bdc14d; }
-    po-rating[ok] number {
-      background: #bdc14d; }
-  po-rating[bad] {
-    border: solid 2px #c8b850; }
-    po-rating[bad] number {
-      background: #c8b850; }
-  po-rating[worst] {
-    border: solid 2px #bb5755; }
-    po-rating[worst] number {
-      background: #bb5755; }
-  po-rating number {
-    background: #a0c847;
-    color: white;
-    width: 75%;
-    display: table-cell;
-    font-size: 35px;
-    line-height: 35px;
-    font-weight: 100;
-    text-align: center;
-    vertical-align: middle; }
-  po-rating info {
-    margin-left: 1px;
-    font-size: 7px;
-    display: block;
-    position: absolute;
-    top: 3px;
-    bottom: 3px;
-    right: 3px;
-    left: 75%; }
-    po-rating info logo {
-      height: 20px;
-      width: 20px;
-      display: block;
-      position: absolute;
-      top: 0; }
-    po-rating info criteria {
-      display: block;
-      height: 2px;
-      background: #eeeeee;
-      margin-top: 2px; }
-    po-rating info detail {
-      position: absolute;
-      bottom: 0;
-      left: 0; }
-
 #pi-rating {
   background: #ebece5 url("img/rating.png") no-repeat top center;
   position: relative; }
@@ -208,19 +135,12 @@ po-rating {
       display: block;
       height: 50px;
       text-overflow: ellipsis; }
-    #pi-rating footer po-rating {
+    #pi-rating footer pie-rating {
       position: absolute;
       right: 0;
       top: 15px; }
   #pi-rating > criteria {
     position: relative; }
-    #pi-rating > criteria rating {
-      padding: 0.4rem 0.7rem;
-      background: #919191;
-      color: white;
-      font-size: 33px;
-      font-weight: 100;
-      position: absolute; }
     #pi-rating > criteria h2 {
       text-transform: uppercase;
       font-weight: 500;
@@ -232,10 +152,10 @@ po-rating {
       top: 115px; }
       #pi-rating > criteria[ingredients] h2 {
         color: #bbcd58; }
-      #pi-rating > criteria[ingredients] rating {
-        background: rgba(188, 205, 88, 0.9);
+      #pi-rating > criteria[ingredients] pie-rating {
+        position: absolute;
         right: -65px;
-        top: 18px; }
+        top: 3px; }
     #pi-rating > criteria[people] {
       left: 50%;
       width: 125px;
@@ -243,10 +163,10 @@ po-rating {
       top: -30px; }
       #pi-rating > criteria[people] h2 {
         color: #84ca55; }
-      #pi-rating > criteria[people] rating {
-        background: rgba(135, 204, 88, 0.9);
+      #pi-rating > criteria[people] pie-rating {
+        position: absolute;
         left: -80px;
-        top: 18px; }
+        top: 3px; }
 
 #mobile-app {
   background: #5cd5c6 url("img/iphone.png") no-repeat right bottom; }
@@ -323,7 +243,7 @@ products {
     text-align: center; }
     products product img {
       margin-top: 20%; }
-    products product po-rating {
+    products product pie-rating {
       position: absolute;
       top: 8px;
       right: 0;
@@ -393,7 +313,7 @@ middle {
       height: 240px;
       position: relative;
       top: -20px; }
-      middle products product po-rating {
+      middle products product pie-rating {
         transform: scale(0.6, 0.6);
         top: 45px; }
       middle products product img {
@@ -414,7 +334,7 @@ middle {
     display: block;
     line-height: 1;
     margin-right: 120px; }
-  middle > po-rating {
+  middle > pie-rating {
     position: absolute;
     top: 15px;
     right: 20px; }
@@ -435,37 +355,12 @@ middle {
       height: 10px;
       background: #cbcbca;
       margin-right: 8px; }
+
   middle sub-ratings {
     margin-top: 20px;
     margin-bottom: 20px;
     display: block;
     border-top: solid 1px #e5e5e5; }
-    middle sub-ratings rating {
-      display: block;
-      border-bottom: solid 1px #e5e5e5;
-      padding: 10px;
-      position: relative;
-      height: 53px; }
-      middle sub-ratings rating info {
-        margin-right: 40px; }
-      middle sub-ratings rating simple-big-rating {
-        display: block;
-        position: absolute;
-        top: 10px;
-        bottom: 10px;
-        right: 10px;
-        width: 40px;
-        padding: 0;
-        line-height: 33px;
-        font-size: 20px;
-        color: white;
-        background: #87cc57;
-        font-weight: 100;
-        text-align: center; }
-      middle sub-ratings rating title {
-        font-weight: bold;
-        display: inline-block;
-        margin-right: 15px; }
 
 product-holder {
   background: white; }

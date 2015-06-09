@@ -5,16 +5,16 @@ Template.navCategory.helpers({
 });
 
 Template.navCategory.events({
-  'click category': function (event) {
-    if (event.target.getAttribute('selected')) {
-      event.target.removeAttribute('selected');
+  'click name': function (event) {
+    if (event.target.parentNode.getAttribute('selected')) {
+      event.target.parentNode.removeAttribute('selected');
     } else {
       unselectAllCategories();
-      event.target.setAttribute('selected', 'true');
+      event.target.parentNode.setAttribute('selected', 'true');
     }
   },
 
-  'click overlay': function (event) {
+  'click subnav': function (event) {
     unselectAllCategories();
   }
 });

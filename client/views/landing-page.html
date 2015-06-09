@@ -3,7 +3,9 @@
     <cart flex tree layout vertical id="pi-rating">
 
       <criteria ingredients>
-        <rating>6.5</rating>
+        <pie-rating seven simple>
+          <rating>6.5</rating>
+        </pie-rating>
         <h2>Съставки</h2>
         <ul>
           <li>Съставки</li>
@@ -12,7 +14,9 @@
       </criteria>
 
       <criteria people>
-        <rating>8.1</rating>
+        <pie-rating eight simple>
+          <rating>8.1</rating>
+        </pie-rating>
         <h2>Обществено мнение</h2>
         <ul>
           <li>Медии</li>
@@ -25,17 +29,23 @@
         <description>
           Финалната оценка на един продукт е повлияна от оценката на съставките и оценката, която медиите и клиентите сформират.
         </description>
-        <po-rating>
-          <number>7.3</number>
+
+        <pie-rating seven>
+          <rating>7.2</rating>
           <info>
-            <logo></logo>
+            <logo>PIE</logo>
             <detail>
-              <total>7.2/10</total>
-              <criteria ingredients></criteria>
-              <criteria people></criteria>
+              <total>7.2/10<i>рейтинг</i></total>
+              <criteria six ingredients>
+                <indication style="width: 67%;"></indication>
+              </criteria>
+              <criteria eight people>
+                <indication style="width: 81%;"></indication>
+              </criteria>
             </detail>
           </info>
-        </po-rating>
+        </pie-rating>
+
       </footer>
     </cart>
     <column flex two layout horizontal>
