@@ -3,17 +3,22 @@
     <a href="/product/{{_id}}">
       <img src="/img/{{image}}.png" alt=""/>
       <name>{{name}}</name>
-      <po-rating {{ getColor rating }}>
-        <number>{{rating}}</number>
+
+      <pie-rating {{ getColor rating }} small>
+        <rating>{{ rating }}</rating>
         <info>
-          <logo></logo>
+          <logo>PIE</logo>
           <detail>
-            <total>{{rating}}/10</total>
-            <criteria ingredients></criteria>
-            <criteria people></criteria>
+            <total>{{ rating }}/10<i>рейтинг</i></total>
+            <criteria six ingredients>
+              <indication></indication>
+            </criteria>
+            <criteria three people>
+              <indication></indication>
+            </criteria>
           </detail>
         </info>
-      </po-rating>
+      </pie-rating>
     </a>
   </product>
 </template>

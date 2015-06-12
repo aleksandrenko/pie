@@ -1,16 +1,25 @@
 Template.productInList.helpers({
-  getColor: function (rating) {
-    var rating = rating | 0;
-    var color = 'great';
+  getColor: function(rating) {
+    var color = 'one';
 
-    if(rating < 5) {
-      color = 'worst'
-    } else if(rating < 6) {
-      color = 'bad';
-    } else if(rating < 7) {
-      color = 'ok'
-    } else if(rating < 8) {
-      color = 'good'
+    if(rating >= 9.5) {
+      color = 'ten';
+    } else if(rating >= 8.5) {
+      color = 'nine';
+    } else if(rating >= 7.5) {
+      color = 'eight';
+    } else if(rating >= 6.5) {
+      color = 'seven';
+    } else if(rating >= 5.5) {
+      color = 'six';
+    } else if(rating >= 4.5) {
+      color = 'five';
+    } else if(rating >= 3.5) {
+      color = 'four';
+    } else if(rating >= 2.5) {
+      color = 'three';
+    } else if(rating >= 1.5) {
+      color = 'two';
     }
 
     return color;
