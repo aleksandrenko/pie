@@ -17,28 +17,37 @@
       {{/each}}
     </category>
 
-    <po-rating>
-      <number>{{rating}}</number>
+    <pie-rating eight>
+      <rating>{{ rating }}</rating>
       <info>
-        <logo></logo>
+        <logo>PIE</logo>
         <detail>
-          <total>{{rating}}/10</total>
-          <criteria ingredients></criteria>
-          <criteria people></criteria>
+          <total>{{ rating }}/10<i>рейтинг</i></total>
+          <criteria nine ingredients>
+            <indication style="width: 87%;"></indication>
+          </criteria>
+          <criteria ten people>
+            <indication style="width: 97%;"></indication>
+          </criteria>
         </detail>
       </info>
-    </po-rating>
+    </pie-rating>
+
 
     <sub-ratings>
-      <rating flex layout horizontal>
+      <rating>
         <title>ЗДРАВЕ</title>
         <info>Този продукт не съдържа съставки, които будят загриженост за здравето.</info>
-        <simple-big-rating yellow>6.5</simple-big-rating>
+        <pie-rating seven="" simple="">
+          <rating>7.4</rating>
+        </pie-rating>
       </rating>
-      <rating flex layout horizontal>
+      <rating>
         <title>ОБЩЕСТВО</title>
         <info>Социални политики, практики и работа, той се поставя тази компания сред най-добрите 50% от фирмите оценяват.</info>
-        <simple-big-rating>7.8</simple-big-rating>
+        <pie-rating nine="" simple="">
+          <rating>9.4</rating>
+        </pie-rating>
       </rating>
     </sub-ratings>
 
@@ -56,6 +65,6 @@
     </sub-info>
   </middle>
 
-  {{> reviewsSidebar}}
+  {{> reviewsSidebar }}
 
 </template>

@@ -1,0 +1,82 @@
+reviews-holder
+  position: relative
+  background: #f2f2f2
+  width: 300px
+
+  review-form
+    position: absolute
+    top: 15px
+    right: 0
+    left: 20px
+    margin-bottom: 15px
+    padding-bottom: 15px
+    border-bottom: solid 1px #d9d9d9
+
+    input
+      display: block
+      padding: 5px 8px
+      width: calc(100% - 10px)
+
+  reviews
+    position: absolute
+    top: 80px
+    right: 0
+    bottom: 0
+    left: 0
+    overflow: auto
+
+    review
+
+      author
+        position: relative
+        display: block
+        height: 35px
+
+        pie-rating
+          position: absolute
+          top: 30px
+          left: 20px
+          width: 23px !important
+          height: 16px !important
+          background: #87cc58
+          color: #fff
+          text-align: center
+
+        rating
+          font-size: 11px !important
+          line-height: 16px !important
+
+        img
+          position: absolute
+          top: 3px
+          left: 20px
+          display: block
+
+        name
+          position: absolute
+          top: 0
+          right: 0
+          left: 55px
+          display: block
+          overflow: hidden
+          color: #51b0c9
+          text-overflow: ellipsis
+          font-weight: bold
+
+        date
+          position: absolute
+          top: 14px
+          left: 55px
+          color: #999
+          font-size: 11px
+
+      review-text
+        display: block
+        margin-bottom: 15px
+        margin-left: 55px
+        padding-right: 10px
+        padding-bottom: 15px
+        border-bottom: solid 1px #d9d9d9
+        color: #5a5a5a
+        font-size: 13px
+        line-height: 1.5

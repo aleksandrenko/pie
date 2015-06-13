@@ -1,11 +1,14 @@
 <template name="review">
   <review>
     <author>
-      <img src="/img/{{avatar}}.png" width="23" height="23" />
-      <simple-rating>{{rating}}</simple-rating>
-      <name>{{author}}</name>
-      <date>{{createdAt}}</date>
+      <img src="assets/img/{{ avatar }}.png" width="23" height="23">
+      <pie-rating {{ getColor rating }} minimal>
+        <rating>{{rating}}</rating>
+      </pie-rating>
+      <name>{{ author }}</name>
+      <date>{{ createdAt }}</date>
     </author>
+
     <review-text>{{text}}</review-text>
   </review>
 </template>

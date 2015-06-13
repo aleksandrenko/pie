@@ -1,0 +1,132 @@
+main
+  background: #f8f8f5
+
+  [yellow]
+    background: #bccd58
+
+  [green]
+    background: #87cc57
+
+  [red]
+    background: #fd6141
+
+side
+  padding: 10px 10px 10px 20px
+  width: 250px
+
+  product-photo
+    display: block
+    margin-top: 10px
+    margin-bottom: 20px
+    text-align: center
+
+  a
+    color: #56a8d8
+
+side,
+middle
+  position: relative
+  background: #ffffff
+
+middle
+  padding: 20px
+  overflow: auto
+
+  products
+    display: block
+    padding: 0
+
+    product
+      position: relative
+      top: -20px
+      margin: 0
+      width: 33%
+      height: 240px
+
+      pie-rating
+        top: 45px
+        transform: scale(0.6, 0.6)
+
+      img
+        margin: 0
+        transform: scale(0.7, 0.7)
+
+      name
+        overflow: hidden
+        max-height: 2rem
+        text-overflow: ellipsis
+
+  h3
+    margin-right: 20px
+    margin-bottom: 10px
+    padding-bottom: 10px
+    border-bottom: solid 1px #e5e5e5
+    font-weight: normal
+
+  & > name
+    display: block
+    margin-right: 120px
+    font-size: 24px
+    line-height: 1
+
+  & > pie-rating
+    position: absolute
+    top: 15px
+    right: 20px
+
+  category
+    display: block
+    margin-bottom: 35px
+    font-size: 12px
+
+  alternatives
+    products
+      background: none
+
+  ingridients
+    ul li
+      overflow: hidden
+      padding: 5px
+      text-overflow: ellipsis
+      white-space: nowrap
+
+      tick
+        display: inline-block
+        margin-right: 8px
+        width: 10px
+        height: 10px
+        background: #cbcbca
+
+  sub-ratings
+    display: block
+    margin-top: 20px
+    margin-bottom: 20px
+    border-top: solid 1px #e5e5e5
+
+    > rating
+      position: relative
+      display: block
+      padding: 10px
+      height: 53px
+      border-bottom: solid 1px #e5e5e5
+
+      info
+        display: block
+        margin-right: 40px
+
+      pie-rating
+        position: absolute
+        top: 6px
+        right: 10px
+
+      title
+        display: block
+        margin-bottom: 5px
+        font-weight: bold
+
+product-holder
+  background: #ffffff
+
+.login-text-and-button
+  margin-right: 15px
+  color: #eee

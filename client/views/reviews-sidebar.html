@@ -1,8 +1,6 @@
 <template name="reviewsSidebar">
   <reviews-holder style="width: 350px">
-    {{#if currentUser}}
-      {{> reviewForm}}
-    {{/if}}
+    {{> reviewForm}}
     <reviews>
       {{#each getReviews}}
         {{> review}}
