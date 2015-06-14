@@ -4,13 +4,13 @@
       <logo>
         <a href="/"><h1 title="Product Information Expert">P.I.E.</h1></a>
       </logo>
-        {{> mainNav}}
-        {{> searchbar}}
+      {{> mainNav}}
+      {{> searchbar}}
       <login>
         {{> loginButtons}}
       </login>
     </app-header>
-
     <main flex layout horizontal>{{> yield}}</main>
+    {{> overlay }}
   </app>
 </template>
